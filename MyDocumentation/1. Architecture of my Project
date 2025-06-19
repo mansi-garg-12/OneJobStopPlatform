@@ -1,0 +1,9 @@
+Client (e.g., React App)
+    ↓
+Controller (REST endpoints)
+    ↓
+Service (Business Logic)
+    ↓
+Repository (DB Access)
+    ↓
+Database (e.g., MySQL, PostgreSQL)
