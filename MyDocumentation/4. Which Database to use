@@ -1,0 +1,25 @@
+We have chosen PostgreSQL as the database for our application due to its strong support for ACID compliance, which ensures reliability and data integrity — especially critical in transactional systems like banking or financial applications.
+
+⚙️ ACID Explained:
+A → Atomicity
+Each transaction is "all or nothing." For example, when transferring money from Bank A to Bank B, either both debit and credit operations succeed — or neither does.
+
+C → Consistency
+The database always moves from one valid state to another. There will be no missing or partial data; rules and constraints are always respected.
+
+I → Isolation
+Concurrent transactions do not interfere with each other. Even if two users are performing transactions at the same time, the data remains correct and isolated.
+
+D → Durability
+Once a transaction is committed, the data is permanently saved — even if there’s a sudden power failure or system crash.
+
+💡 Why PostgreSQL?
+Offers rich data types (including JSON, UUID, Arrays, and more)
+
+Provides powerful indexing and query optimization
+
+Ensures high-level security and access control
+
+Handles complex transactional workloads reliably
+
+Prioritizes data integrity over raw speed, making it ideal for systems that can't afford data loss or inconsistency

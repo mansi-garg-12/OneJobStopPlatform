@@ -1,0 +1,10 @@
+psql postgres
+
+create database onejobstopdb;
+
+create user mansi with encrypted password 'mansi@123';
+grant all privileges on database onejobstopdb to mansi;
+
+psql onejobstopdb
+
+\dt  ->for all user defined table
