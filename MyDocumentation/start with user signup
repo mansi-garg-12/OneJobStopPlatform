@@ -1,0 +1,20 @@
+Field	Meaning	Note
+fullName	User’s full name	Simple String
+email	Email (unique)	Validated in DTO, here marked as unique
+phone	Phone number (unique)	Also unique
+password	Encrypted password	Will store hashed version
+role	Role of user	For example, ROLE_USER or ROLE_ADMIN
+isVerified	Boolean	True if email/phone is verified
+otp	OTP string	Temporary storage
+otpGeneratedAt	Timestamp	Used to expire OTPs after 5 mins
+
+create table users (
+id SERIAL PRIMARY KEY,
+name VARCHAR(255),
+ email VARCHAR(255) unique,
+ phoneNo VARCHAR(255) unique,
+ password VARCHAR(255),
+ role VARCHAR(50),
+ isVerified BOOLEAN,
+ otp VARCHAR(6),
+ loginTime TIMESTAMP );
